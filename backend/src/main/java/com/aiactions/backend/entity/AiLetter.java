@@ -32,4 +32,8 @@ public class AiLetter {
     )
     private List<Template> templates = new ArrayList<>();
 
+    // 연관 레터
+    @OneToOne
+    @JoinColumn(name = "card_id")
+    private Card card;
 }

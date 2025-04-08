@@ -1,4 +1,4 @@
-package com.aiactions.backend.service;
+package com.aiactions.backend.service.user;
 
 import com.aiactions.backend.dto.CardDTO;
 import com.aiactions.backend.dto.CardSearchDTO;
@@ -27,7 +27,7 @@ public class CardService {
     }
 
     // 카드 검색했을 때 조회
-    public org.springframework.data.domain.Page<CardDTO> getCards(CardSearchDTO condition) {
+    public Page<CardDTO> getCards(CardSearchDTO condition) {
         Pageable pageable = (Pageable) PageRequest.of(condition.getPage(), condition.getSize(), Sort.by("createdAt").descending());
 
         Page<Card> cards = cardRepository.findByKeywordOrTag(

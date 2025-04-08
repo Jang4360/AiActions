@@ -2,6 +2,7 @@ package com.aiactions.backend.dto;
 
 import lombok.Getter;
 
+// 유저 페이지 - 기존 card 검색 조회 DTO
 @Getter
 public class CardSearchDTO {
     private String keyword;

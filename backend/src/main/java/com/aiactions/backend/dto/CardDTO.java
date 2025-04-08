@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
+// 유저 페이지 - 기존 card 전체 조회 DTO
 @Getter
 public class CardDTO {
     private UUID id;

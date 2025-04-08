@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+// 유저 페이지 - 기본 aiLetter 조회 DTO
 public class AiLetterDetailResponseDTO {
     private UUID id;
     private String title;

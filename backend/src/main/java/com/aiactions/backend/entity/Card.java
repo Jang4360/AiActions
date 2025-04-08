@@ -2,6 +2,7 @@ package com.aiactions.backend.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -27,7 +28,6 @@ public class Card {
     private List<String> tags = new ArrayList<>();
 
     private String imageUrl;
-
     // 연관 레터
     @OneToOne
     @JoinColumn(name = "ai_letter_id")
