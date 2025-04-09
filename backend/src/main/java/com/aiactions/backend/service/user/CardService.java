@@ -26,7 +26,7 @@ public class CardService {
                 .toList();
     }
 
-    // 카드 검색했을 때 조회
+    // 카드 검색, 태그 기반 조회
     public Page<CardDTO> getCards(CardSearchDTO condition) {
         Pageable pageable = (Pageable) PageRequest.of(condition.getPage(), condition.getSize(), Sort.by("createdAt").descending());
 
